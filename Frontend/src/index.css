@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Outfit', sans-serif;
+  --font-serif: 'Playfair Display', serif;
+}
+
+html {
+  font-size: 18px; /* Globally scales up all tailwind rem-based text utilities */
+}
+
+body {
+  background-color: #f8fafc; /* bg-slate-50 */
+  color: #1e293b; /* High legibility dark slate text (slate-800) */
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Custom transitions and scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #6366f1;
+}
+
+.serif-font {
+  font-family: 'Playfair Display', Georgia, serif;
+}
